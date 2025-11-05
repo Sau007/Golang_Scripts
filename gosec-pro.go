@@ -1,22 +1,3 @@
-// gosec-pro.go
-// GoSec-Pro v3.0
-// Single-file tool with subcommands: scan, ports, all, gen-workflow
-// Features:
-//  - header security scan + risk scoring
-//  - TLS certificate summary (issuer, expiry, version)
-//  - concurrent scans from file or single URL
-//  - retries, per-worker delay (rate-limit), concurrency control
-//  - port scanner (concurrent TCP connect)
-//  - outputs: pretty terminal (color), JSON, CSV, plain text
-//  - generates a simple GitHub Actions workflow
-//
-// Usage examples:
-//   go run gosec-pro.go scan -url https://example.com -timeout 10 -retries 2
-//   go run gosec-pro.go scan -input urls.txt -concurrency 10 -json -output results.json
-//   go run gosec-pro.go ports -host example.com -ports 22,80,443,8000-8010 -concurrency 50 -output ports.json
-//   go run gosec-pro.go all -input urls.txt -ports 80,443 -output combined.json
-//   go run gosec-pro.go gen-workflow -out .github/workflows/gosec-scan.yml
-
 package main
 
 import (
